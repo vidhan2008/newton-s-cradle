@@ -53,9 +53,17 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
+keyPressed();
+
 
 }
 
+function keyPressed() { 
+	if (keyCode === UP_ARROW) {
+		 Matter.Body.applyForce(bob1.body,bob1.body.position, {x:-50,y:-45});
+		 } 
+		}
+// Ma'am please press down arrow to bring the bob down 
 
 
 
